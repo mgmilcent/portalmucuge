@@ -1,0 +1,546 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    height: 500vh;
+    background-color: #FDF0DC;
+}
+
+.container{
+    width: 1280px;
+    margin: auto;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header{
+    width: 100%;
+    padding: 60px 4%;
+    position: fixed;
+    top:0;
+    left:0;
+    transition: 0.5s;
+    z-index: 9999;
+}
+
+.logo-menu{
+    transition: 0.3s ease-in-out
+}
+
+.logo-menu:hover{
+    transform: scale(1.1);
+}
+
+header.rolagem{
+    background-color: #7F4F24;
+    padding: 20px 4%;
+}
+
+header.rolagem a{
+    color: white
+}
+
+header ul{
+    list-style-type: none;
+}
+
+header ul li{
+    display: inline-block;
+    margin: 0 20px;
+}
+
+header ul li a{
+    position: relative;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+header ul li a::after{
+    content: "";
+    position: absolute;
+    background-color: #ffffff;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+}
+
+header ul li a:hover:after{
+    width: 100%;
+}
+
+.slide-box.primeiro{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.slide-box.primeiro input{
+    width: 500px;
+    height: 50px;
+    border:none;
+    border-radius: 30px;
+    font-size: 20px;
+    padding: 0 20px;
+    background-image: url(/lupa.png);
+    background-repeat: no-repeat;
+    background-position: calc(15px);
+    background-size: 1.7em;
+    padding-left: 3em;
+}
+
+.slide-box.segundo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-end;
+    padding-bottom: 170px;
+    padding-right: 150px;
+    justify-content: center;
+}
+
+.segundo-txt h2{
+    color: white;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.segundo-txt{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.segundo-txt button, .slide-box.terceiro button, .slide-box.quarto button{
+    width: 160px;
+    height: 55px;
+    border: 1px solid #A1A249;
+    border-radius: 20px;
+    background-color: #A1A249;
+    color: white;
+    transition: 0.5s;
+    font-size: 20px;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+.segundo-txt button:hover, .slide-box.terceiro button:hover, .slide-box.quarto button:hover{
+    background-color: white;
+    color:#A1A249;
+}
+
+.slide-box.terceiro{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.slide-box.terceiro h1{
+    font-size: 40px;
+    font-weight: 600;
+    color: white;
+}
+
+.slide-box.quarto{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 70px;
+    color: white;
+}
+
+.slide-box.quarto h1{
+    font-size: 50px;
+}
+
+.slide-box.quarto p{
+    font-size: 30px;
+}
+
+.secao1{
+    text-align: center;
+    padding: 40px;
+}
+
+.secao1 h1{
+    color: #A1A249;
+    padding-bottom: 30px;
+    font-size: 30px;
+}
+
+.secao1-1{
+    padding: 30px 250px 30px 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.txtsecao1-1e1-3{
+    text-align: left;
+}
+
+.txtsecao1-2{
+    text-align: right;
+}
+
+.txtsecao1-1e1-3 h2, .txtsecao1-2 h2{
+    color: #A1A249;
+    font-size: 30px;
+}
+
+.txtsecao1-1e1-3 p, .txtsecao1-2 p {
+    font-size: 20px;
+    padding: 10px 0;
+}
+
+.txtsecao1-1e1-3 button, .txtsecao1-2 button{
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #A1A249;
+    border-radius: 20px;
+    background-color: #A1A249;
+    color: white;
+    transition: 0.5s;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.txtsecao1-1e1-3 button:hover, .txtsecao1-2 button:hover, .secao3-1txt button:hover, .secao4 button:hover{
+    background-color: #FDF0DC;
+    color: #A1A249;
+}
+
+.secao1-2{
+    padding: 30px 290px 30px 250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.secao1-3{
+    padding: 30px 230px 30px 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.secao2{
+    background-color: #7F4F24;
+    width: 100%;
+    height: 700px;
+    padding: 50px;
+    text-align: center;
+}
+
+.secao2 h2{
+    color: white;
+    padding-bottom: 15px;
+    font-weight: 700;
+}
+
+.txtsecao2{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 10px;
+    color: white;
+}
+
+.secao2 button, .secao3-1txt button, .secao4 button {
+    padding: 10px;
+    border: 1px solid #A1A249;
+    border-radius: 20px;
+    background-color: #A1A249;
+    color: white;
+    transition: 0.5s;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.secao2 button:hover{
+    background-color: #FDF0DC;
+    color: #7F4F24;
+    border: 1px solid #7F4F24;
+}
+
+.secao3{
+    padding: 90px;
+}
+
+.secao3-1{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 200px;
+}
+
+.secao3-1txt{
+    text-align: center;
+}
+
+.secao3-1txt h2{
+    font-size: 30px;
+    color:#A1A249;
+}
+
+.secao3-1txt p{
+    font-size: 20px;
+    padding: 10px 0;
+}
+
+.secao3-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 50px 20px 50px;
+}
+
+.secao3-2 .banner1:hover, .secao3-2 .banner2:hover, .secao3-2 .banner3:hover{
+    transform: scale(1.1);
+}
+
+.secao3-2 .banner1, .secao3-2 .banner3{
+    background-color: rgb(161,162,73,0.5);
+    width: 350px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 30px;
+    transition: 0.3s ease-in-out;
+}
+
+.secao3-2 .banner1 h3, .secao3-2 .banner2 h3, .secao3-2 .banner3 h3{
+    color: white;
+    font-size: 25px;
+}
+
+.secao3-2 .banner1 p, .secao3-2 .banner2 p, .secao3-2 .banner3 p{
+    color: white;
+    font-weight: 450;
+    font-size: 18px;
+}
+
+.secao3-2 .banner2{
+    background-color: #A1A249;
+    width: 350px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 30px;
+    transition: 0.3s ease-in-out;
+}
+
+.secao3img img{
+    border-radius: 30px;
+}
+
+.imgfundosecao4{
+    width: 100%;
+    height: 300px;
+    background-image: url(imgsecao4.png);
+    background-position: 100% 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    color: white;
+}
+
+.secao4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 40px;
+}
+
+.secao4-1{
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    padding: 80px 80px 40px 80px;
+}
+
+.secao4-1 .banner1, .secao4-1 .banner2, .secao4-1 .banner3 {
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s ease-in-out;
+}
+
+.secao4-1 .banner1:hover, .secao4-1 .banner2:hover, .secao4-1 .banner3:hover{
+    transform: scale(1.1);
+}
+
+.secao4-1 .banner1 .banner1txt, .secao4-1 .banner3 .banner3txt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 5px;
+    padding: 25px 0;
+    background-color: rgb(127,79,36,69%);
+    color: white;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.secao4-1 .banner1 .banner1txt h3, .secao4-1 .banner2 .banner2txt h3, .secao4-1 .banner3 .banner3txt h3{
+    font-size: 22px;
+}
+
+.secao4-1 .banner1 .banner1txt p, .secao4-1 .banner2 .banner2txt p, .secao4-1 .banner3 .banner3txt p{
+    font-size: 16px;
+}
+
+.secao4-1 .banner2 .banner2txt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 5px;
+    padding: 25px 0 35px 0;
+    background-color: rgb(127,79,36,69%);
+    color: white;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px
+}
+
+.rodape{
+    background-color: #7F4F24;
+    display: flex;
+    height: 35vh;
+    align-items: center;
+    justify-content: center;
+    padding-right: 10px;
+}
+
+.rodape .nav{
+    display: flex;
+    align-items: center;
+    margin-left: 8vw;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 15px;
+}
+
+.rodape .nav .eventos{
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}/*animação eventos*/
+
+.rodape .nav .eventos:hover{
+    transform: scale(1.1);
+}/*animação eventos*/
+
+.rodape .titulo2{
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.rodape .redes{
+    display: flex;
+    margin-top: -2vh;
+    margin-left: 8vw;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    transition: 0.3s ease-in-out;
+    font-size: 15px;
+}
+
+.rodape .redes .sociais{
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}/*animação redes*/
+
+.rodape .redes .sociais:hover{
+    transform: scale(1.1);
+}/*animação redes*/
+
+.rodape .png1{
+    display: flex;
+    align-items: center;
+    width: 20%; 
+    height: 20%;
+    flex-direction: column;
+}
+
+.rodape .titulo3{
+    color: #fff;
+    font-size: 18px;
+}
+
+.rodape .contatos{
+    display: flex;
+    align-items: center;
+    margin-left: 7vw;
+    flex-direction: column;
+    margin-top: -10vh;
+    gap: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+.rodape .contatos .ctt{
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+    font-size: 15px;
+}/*animação contatos*/
+
+.rodape .contatos .ctt:hover{
+    transform: scale(1.1);
+}/*animação contatos*/
+
+.rodape .png2{
+    display: flex;
+    align-items: center;
+    width: 15%; 
+    height: 20%;
+    flex-direction: column;
+}

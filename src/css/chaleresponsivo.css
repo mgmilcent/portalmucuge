@@ -1,0 +1,199 @@
+@media (max-width: 1024px){
+    .content .nav .listas{
+        margin-top: 5px;
+    }
+
+    .content .nav .listas .a{
+        font-size: 18px;
+    }
+
+    .rodape{
+        height: 25vh;
+    }
+
+    .rodape .contatos{
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 853px){
+    .confira{
+        height: 800px;
+    }
+
+    .confira .impressoes{
+        display: flex;
+        flex-direction: column;
+        height: 500px;
+        margin-top: 40px;
+    }
+
+    .content{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content .tituloprincipal{
+        width: 100%;
+    }
+
+    .nav{
+        align-self: center;
+    }
+
+    .content .nav .listas{
+        margin-top: 10px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav .listas .lista{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+
+@media (max-width: 768px){
+    .content{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content .tituloprincipal{
+        width: 100%;
+    }
+
+    .nav{
+        align-self: center;
+    }
+
+    .content .nav .listas{
+        margin-top: 10px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav .listas .lista{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .confira{
+        height: 800px;
+    }
+
+    .confira .impressoes{
+        display: flex;
+        flex-direction: column;
+        height: 500px;
+        margin-top: 40px;
+    }
+
+    .rodape{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 430px){
+    .content{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content .tituloprincipal{
+        width: 100%;
+    }
+
+    .content .nav .listas{
+        margin-top: 10px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav .listas .lista{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .confira{
+        height: 800px;
+    }
+
+    .confira .impressoes{
+        display: flex;
+        flex-direction: column;
+        height: 500px;
+        margin-top: 40px;
+    }
+
+    .rodape{
+        display: flex;
+        flex-wrap: wrap;
+        height: 55% ;
+    }
+
+    .rodape .nave{
+        margin-top: 30px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .carousel-item {
+        min-width: 80%; /* Reduzir o tamanho para visualização melhor em dispositivos móveis */
+    }
+
+    .carousel-inner {
+        width: 100%; /* Ajuste para mostrar 1 card por vez */
+    }
+
+    .carousel-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .carousel {
+        width: 100%; /* Ajuste para a largura completa */
+    }
+
+    /* Estilos para os botões de navegação em dispositivos móveis */
+    .carousel-container {
+        position: relative; /* Restaurar o posicionamento relativo para as setas */
+    }
+
+    .carousel-button.prev,
+    .carousel-button.next {
+        position: absolute; /* Posicionamento absoluto para as setas */
+        top: 50%;   
+        transform: translateY(-50%);
+        background-color: rgba(0, 0, 0, 0.5); /* Fundo escuro */
+        color: #fff; /* Texto branco */
+        border: none; /* Sem borda */
+        padding: 10px; /* Espaçamento interno */
+        cursor: pointer;
+        border-radius: 50%; /* Borda arredondada */
+        z-index: 1; /* Z-index para ficar acima do conteúdo */
+    }
+
+    .carousel-button.prev {
+        left: 10px; /* Posição à esquerda */
+    }
+
+    .carousel-button.next {
+        right: 10px; /* Posição à direita */
+    }
+}
